@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #EFE6E4;
+	font-size:20px;
+	color: #533738;
+}
+
+header {
+	background-image: url("img/header-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu {
+	display: flex;
+	justify-content: end;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 50px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+
+.logo__img {
+	height: 26px;
+	width: 25px;
+}
+.logo__heading {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+
+.navigation__list {
+	display: flex;
+	list-style: none;
+	align-items: center;
+
+}
+
+.navigation__link {
+	margin: 0 30px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #533738;
+}
+
+.menu__telephone{
+	text-decoration: none;
+	color: #533738;
+}
+
+
+.header-container {	
+	width: 100%;
+	max-width: 600px;
+	margin-left: 10%;
+	padding-top: 60px;
+	padding-bottom: 200px;
+}
+
+.header-container p {
+	line-height: 30px;
+}
+
+.promo__link {
+	background-color:  #CC8B86;
+	padding: 20px;
+	width: 45%;
+	font-size: 20px;
+	color: #533738;
+	border: none;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 400;
+	text-align: center;
+} 
+article.about-us {
+	margin: 10%;
+	margin-top: 80px;
+
+}
+
+.about-us div {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.about-us div p {
+	margin-left: 50px;
+	margin-right: 100px;
+}
+
+.about-us div img {
+	width:500px;
+}
+
+.results {
+	background-color: #8D7370;
+	display: flex;
+	justify-content: center;
+}
+
+section.works-done * {
+	margin: 60px;
+	color: white;
+	text-align: center;
+	font-size: 1.8em;
+	line-height: 40px;
+}
+
+span.number-done {
+	font-size: 2em;
+}
+
+footer {
+	padding: 80px;
+	display: flex;
+}
+
+
+.footer__telephone {
+	color: #533738;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.footer__address {
+	margin-right: auto;
+	font-style: normal;
+}

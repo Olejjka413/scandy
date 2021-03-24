@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>SCANDY</title>
+</head>
+
+
+<body>
+
+	<header class="header">
+		<section class="header__menu menu">
+			<div class="menu__logo logo">
+				<img src="img/logo.png" alt="Логотип" class="logo__img">
+				<h1 class="logo__heading">Scandy</h1>
+			</div>
+
+			<nav class="menu__navigation navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#about" class="navigation__link">О компании</a>
+					</li>
+					<li class="navigation__item">
+						<a href="" class="navigation__link">Портфолио</a>
+					</li>
+					<li class="navigation__item">
+						<a href="" class="navigation__link">Команда</a>
+					</li>
+					<li class="navigation__item">
+						<a href="" class="navigation__link">Как мы работаем</a>
+					</li>
+					<li class="navigation__item">
+						<a href="" class="navigation__link">Отзывы клиентов</a>
+					</li>
+					<li class="navigation__item">
+						<a href="" class="navigation__link">Оставить заявку</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="tel:+79818574624" class="menu__telephone">+7 (981) 857-46-24</a>
+		</section>
+
+		<section class ="header__promo promo">
+			<h2 class="visually-hidden">Чем мы можем вам помочь</h2>
+			<p class="promo__heading">Поможем сделать вашу квартиру уютнее</p>
+			<p class="promo__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+			<a class="promo__link" href="application">Оставить заявку</a>
+		</section>
+	</header>
+
+
+	<main class="main">
+		<section class="main__about about" id="about">
+			<h2 class="about__heading">О нас</h2>
+			<div class="about__content">
+				<img class="about__img" src="img/table.jpeg" alt="Оформление стола">
+				<p class="about__description">
+					Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
+					Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  
+					что по-настоящему вдохновляет дизайнеров нашей студии.
+					Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: «Да! Это именно то, 
+					что действительно достойно моего дома!»
+				</p>
+			</div>
+		</section>
+
+		<section class="results">
+			<ul class="results__list">
+				<li class="results__item">
+					<p class="results__text">
+						<span class="results__number">5</span>
+						<span class="results__text">ЛЕТ ОПЫТА</span>
+					</p>
+				</li>
+				<li class="results__item">
+					<p class="results__text">
+						<span class="results__number">100</span>
+						<span class="results__text">ПРОЕКТОВ</span>
+					</p>
+				</li>
+				<li class="results__item">
+					<p class="results__text">
+						<span class="results__number">10</span>
+						<span class="results__text">НАГРАД</span>
+					</p> 
+					<!-- Здесь лучше наложить flex на results__text и сделать flex-direction: column, а там уже align-items: center; -->
+				</li>
+			</ul>		
+		</section>
+
+		<section class="portfolio">
+			<h2>НАШИ РАБОТЫ</h2>
+			<img src ="img/studio.jpg" alt="Квартира-студия">
+			<img src ="img/kitchen.jpeg" alt="Кухня">
+			<img src ="img/living-room.jpeg" alt="Гостинная">
+			<img src ="img/bathroom.jpg" alt="Ванная">
+		</section>
+		<section class="team"></section>
+		<section class="reviews">
+			<h2>ОТЗЫВЫ</h2>
+		</section>
+		<section class="application"></section>
+	</main>
+
+
+	<footer>
+		<a href="tel:+79818574624" class="footer__telephone">+7 (981) 857-46-24</a>
+		<address class= "footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
+		<p class ="footer__company">ИП Королёва А.А.</p>
+	</footer>
+
+</body>

@@ -1,116 +1,240 @@
 <!doctype html>
 <html lang="ru">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>SCANDY</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>SCANDY</title>
+	</head>
 
 
-<body>
+	<body>
 
-	<header class="header">
-		<section class="header__menu menu">
-			<div class="menu__logo logo">
-				<img src="img/logo.png" alt="Логотип" class="logo__img">
-				<h1 class="logo__heading">Scandy</h1>
-			</div>
+		<header class="header">
+			<section class="header__menu menu">
+				<div class="menu__logo logo">
+					<img src="img/logo.png" alt="Логотип" class="logo__img">
+					<h1 class="logo__heading">Scandy</h1>
+				</div>
 
-			<nav class="menu__navigation navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a href="#about" class="navigation__link">О компании</a>
+				<nav class="menu__navigation navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#about" class="navigation__link">О компании</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#portfolio" class="navigation__link">Портфолио</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#team" class="navigation__link">Команда</a>
+						</li>
+						<li class="navigation__item">
+							<a href="" class="navigation__link">Как мы работаем</a>
+						</li>
+						<li class="navigation__item">
+							<a href="" class="navigation__link">Отзывы клиентов</a>
+						</li>
+						<li class="navigation__item">
+							<a href="" class="navigation__link">Оставить заявку</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a href="tel:+79818574624" class="menu__telephone">+7 (981) 857-46-24</a>
+			</section>
+
+			<section class ="header__promo promo">
+				<h2 class="visually-hidden">Чем мы можем вам помочь</h2>
+				<div class="promo__wrapper">
+ 					<p class="promo__heading">Поможем сделать вашу квартиру уютнее</p>
+					<p class="promo__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+					<a class="promo__link" href="application">Оставить заявку</a>
+				</div>
+			</section>
+		</header>
+
+
+		<main class="main">
+			<section class="main__about about" id="about">
+				<h2 class="about__heading">О нас</h2>
+				<div class="about__content">
+					<img class="about__img" src="img/table.jpeg" alt="Оформление стола">
+					<div class="about__description">
+						<p class="about__text">
+						Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
+						Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  
+						что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+						<p class="about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: «Да! Это именно то, 
+						что действительно достойно моего дома!»</p>
+				</div>
+			</section>
+
+			<section class="results">
+				<ul class="results__list">
+					<li class="results__item">
+						<p class="results__text">
+							<span class="results__number">5</span>
+							<span class="results__text">Лет опыта</span>
+						</p>
 					</li>
-					<li class="navigation__item">
-						<a href="" class="navigation__link">Портфолио</a>
+					<li class="results__item">
+						<p class="results__text">
+							<span class="results__number">100</span>
+							<span class="results__text">Проектов</span>
+						</p>
 					</li>
-					<li class="navigation__item">
-						<a href="" class="navigation__link">Команда</a>
+					<li class="results__item">
+						<p class="results__text">
+							<span class="results__number">10</span>
+							<span class="results__text">Наград</span>
+						</p> 
 					</li>
-					<li class="navigation__item">
-						<a href="" class="navigation__link">Как мы работаем</a>
-					</li>
-					<li class="navigation__item">
-						<a href="" class="navigation__link">Отзывы клиентов</a>
-					</li>
-					<li class="navigation__item">
-						<a href="" class="navigation__link">Оставить заявку</a>
-					</li>
+				</ul>		
+			</section>
+			<section class="portfolio" id="portfolio">
+				<h2 class="portfolio__heading">НАШИ РАБОТЫ</h2>
+				<ul class="portfolio__list">
+					<portfolio__card>
+						<img src="img/studio.jpg" alt="Квартира-студия" class="portfolio__img">
+						<div class="portfolio__text-content">
+							<h3 class="portfolio__subheading"></h3>
+							<p class="portfolio__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+								на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+						</div>
+					</portfolio__card>
+					<portfolio__card>
+						<img src="img/kitchen.jpeg" alt="Кухня" class="portfolio__img">
+						<div class="portfolio__text__content">
+							<h3 class="portfolio__subheading"></h3>
+							<p class="portfolio__text"></p>
+						</div>
+					</portfolio__card>
+					<portfolio__card>
+						<img src="img/living-room.jpeg" alt="Гостинная" class="portfolio__img">
+						<div class="portfolio__text__content">
+							<h3 class="portfolio__subheading"></h3>
+							<p class="portfolio__text"></p>
+						</div>
+					</portfolio__card>
+					<portfolio__card>
+						<img src="img/bathroom.jpg" alt="Ванная" class="portfolio__img">
+						<div class="portfolio__text__content">
+							<h3 class="portfolio__subheading"></h3>
+							<p class="portfolio__text"></p>
+						</div>
+					</portfolio__card>
 				</ul>
-			</nav>
+				<a href="#" class="portfolio__link">Смотреть еще 
+					<svg class ="portfolio__arrow" width="61" height="16" viewBox="0 0 61 16" xmlns="http://www.w3.org/2000/svg">
+						<path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"/>
+					</svg>
+				</a> 
 
-			<a href="tel:+79818574624" class="menu__telephone">+7 (981) 857-46-24</a>
-		</section>
+			</section>
 
-		<section class ="header__promo promo">
-			<h2 class="visually-hidden">Чем мы можем вам помочь</h2>
-			<p class="promo__heading">Поможем сделать вашу квартиру уютнее</p>
-			<p class="promo__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-			<a class="promo__link" href="application">Оставить заявку</a>
-		</section>
-	</header>
+		
+			<section class="team" id="team">
+				<h2 class="team__heading">Команда</h2>
+				<ul class="team__list">
+					<ul class="team__card">
+						<img src="img/masha.jpg" alt="" class="team__img">
+						<p class="team__description">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается <br>
+							и помогает сделать вашу квартиру красивой и уютной.</p>
+					</ul>
+					<ul class="team__card">
+						<img src="img/sasha.jpg" alt="" class="team__img">
+						<p class="team__description">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
+							и ответит на все вопросы.</p>
+					</ul>
+					<ul class="team__card">
+						<img src="img/katya.jpg" alt="" class="team__img">
+						<p class="team__description">Катя тоже занимается дизайном.
+							Она всегда находит общий язык
+							с клиентами и точно знает,
+							как обсутроить дом так, чтобы вам понравилось.</p>
+					</ul>
+				</ul>
+			</section>
+			<section class="workflow">
+				<h2 class="workflow__heading">Как мы работаем</h2>
+				<ol class="workflow__list">
+					<li class="workflow__item">
+						<p class="workflow__text">Знакомимся, выезжаем
+							на объект, утверждаем концепцию, подписывем договор.</p>
+					</li>
+					<li class="workflow__item">
+						<p class="workflow__text">Подбираем мебель, текстиль, аксессуры. Делаем 3D-
+							зуализацию.</p>
+					</li>
+					<li class="workflow__item">
+						<p class="workflow__text">Находим нужные магазины, помогаем с доставкой
+							и оплатой товаров.</p>
+					</li>
+					<li class="workflow__item">
+						<p class="workflow__text">Воплощаем проект в жизнь:
+							расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
+					</li>
+				</ol>
+			</section>
+			
+
+			<section class="reviews">
+				<h2 class="reviews__heading">Отзывы</h2>
+				<div class="reviews__slider slider">
+					<button class="slider__control">
+						<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#F5F2ED"/>
+						</svg>
+					</button>
+				
+					<div class="slider__slide">
+						<div class="slider__text-wrapper">
+							<p class="slider__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+							<p class="slider__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+							<p class="slider__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+							<p class="slider__text">Анна Беловская</p>
+						</div>
+						<div class="slider__img-wrapper">
+							<img src="img/review-livingroom.jpg" alt="" class="slider__img">
+							<img src="img/review-kitchen.jpeg" alt="" class="slider__img">
+						</div>
+					</div>
+
+					<button class="slider__control">
+						<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#F5F2ED"/>
+						</svg>
+					</button>
+				
+				</div>
+			</section>
+
+			<section class="callback">
+				<div class="callback__form-wrapper">
+					<h2 class="callback__heading">Оставить заявку</h2>
+					<p class="callback__text">Оставьте свои контакты. Менеджер перезвонит
+						в удобное вам время и ответит на все вопросы.</p>
+					<form action="" class="callback__form">
+						<input type="text" class="callback__input callback__input--name" placeholder="Ваше имя">
+						<input type="text" class="callback__input callback__input--phone" placeholder="Введите телефон">
+						<button class="callback__submit">Оставить заявку</button>
+					</form>
+
+				</div>
+				<div class="callback__map-wrapper"><img src="img/map.jpeg" alt="" class="callback__map"></div>
+			</section>
+		
 
 
-	<main class="main">
-		<section class="main__about about" id="about">
-			<h2 class="about__heading">О нас</h2>
-			<div class="about__content">
-				<img class="about__img" src="img/table.jpeg" alt="Оформление стола">
-				<p class="about__description">
-					Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
-					Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  
-					что по-настоящему вдохновляет дизайнеров нашей студии.
-					Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: «Да! Это именно то, 
-					что действительно достойно моего дома!»
-				</p>
-			</div>
-		</section>
-
-		<section class="results">
-			<ul class="results__list">
-				<li class="results__item">
-					<p class="results__text">
-						<span class="results__number">5</span>
-						<span class="results__text">ЛЕТ ОПЫТА</span>
-					</p>
-				</li>
-				<li class="results__item">
-					<p class="results__text">
-						<span class="results__number">100</span>
-						<span class="results__text">ПРОЕКТОВ</span>
-					</p>
-				</li>
-				<li class="results__item">
-					<p class="results__text">
-						<span class="results__number">10</span>
-						<span class="results__text">НАГРАД</span>
-					</p> 
-					<!-- Здесь лучше наложить flex на results__text и сделать flex-direction: column, а там уже align-items: center; -->
-				</li>
-			</ul>		
-		</section>
-
-		<section class="portfolio">
-			<h2>НАШИ РАБОТЫ</h2>
-			<img src ="img/studio.jpg" alt="Квартира-студия">
-			<img src ="img/kitchen.jpeg" alt="Кухня">
-			<img src ="img/living-room.jpeg" alt="Гостинная">
-			<img src ="img/bathroom.jpg" alt="Ванная">
-		</section>
-		<section class="team"></section>
-		<section class="reviews">
-			<h2>ОТЗЫВЫ</h2>
-		</section>
-		<section class="application"></section>
-	</main>
+		</main>
 
 
-	<footer>
-		<a href="tel:+79818574624" class="footer__telephone">+7 (981) 857-46-24</a>
-		<address class= "footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
-		<p class ="footer__company">ИП Королёва А.А.</p>
-	</footer>
-
-</body>
+		<footer class="footer">
+			<a href="tel:+79818574624" class="footer__telephone">+7 (981) 857-46-24</a>
+			<address class= "footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
+			<p class ="footer__company">ИП Королёва А.А.</p>
+		</footer>
+		<script src="1.js"></script>
+	</body>
+</html>

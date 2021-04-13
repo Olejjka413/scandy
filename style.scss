@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #EFE6E4;
+  font-size: 18px;
+  color: #533738;
+}
+
+
+.header {
+    background-image: url("img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 715px;
+
+    &__menu {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    
+}
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    &__telephone {
+    text-decoration: none;
+    color:#533738;
+    font-size: 18px;
+    margin-left: 40px;
+    }
+}
+
+.logo {
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__heading {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 400;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color:#533738;
+    font-size: 18px;
+    margin-left: 30px;
+
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.promo {
+
+  &__wrapper {
+    margin-top: 100px;
+    margin-left: 180px;
+  }
+
+  &__heading {
+    font-size: 50px;
+    max-width: 500px;
+
+  }
+
+  &__description {
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 420px;
+    line-height: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #533738;
+    background-color:#CC8B86;
+    padding: 25px 65px 25px 65px;
+  }
+
+}
+
+
+.results {
+  background-color: #8D7370;
+  padding: 100px 50px 100px 50px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: 50px;
+    color: white;
+  }
+
+  &__text {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+
+.about {
+
+  &__heading {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  &__content {
+    display: flex;
+    margin-left: 180px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 444px;
+    height: 465px;
+  }
+
+  &__description {
+    max-width: 520px;
+    margin-left: 60px;
+  }
+
+  &__text {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.portfolio {
+  &__heading {
+    margin-left: 100px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+
+  }
+}
+
+
+.team {
+  background-color: #E2C4BA;
+
+  &__heading {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+
+  &__img {
+    width: 320px;
+    height: 253px;
+  }
+
+  &__description {
+    max-width: 320px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+}
+
+
+.workflow {
+  background-color: #E2C4BA;
+
+  &__heading {
+
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    max-width: 300px;
+    
+    &::before {
+      counter-increment: li;
+      content: counter(li);
+
+      min-width: 70px;
+      min-height: 70px;
+      background-color: #8d7370;
+      border-radius: 50%;
+
+      color: #ffffff;
+      text-align: center;
+      line-height: 70px;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 20px;
+  }
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 30px;
+  }
+
+}
+
+.reviews {
+  &__heading {
+
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__control {
+    border-radius: 50%;
+    background-color: #CC8B86;
+    height: 72px;
+    width: 72px;
+    border: none;
+
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  &__slide {
+    display: flex;
+  }
+
+  &__text-wrapper {
+  
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 100px;
+  }
+
+  &__text {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__text:last-child {
+    text-transform: uppercase;
+  } 
+
+  &__img-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 408px;
+    height: 279px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.callback {
+  color: white;
+  background-color: #8D7370;
+  max-height: 624px;
+  display: flex;
+  padding-right: 180px;
+  
+
+  &__heading {
+    
+    
+    padding-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+  }
+
+  &__form-wrapper {
+    margin-left: 180px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  &__text {
+    color: #D1C7C6;
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-bottom: 35px;
+    border: none;
+    border-bottom: solid white 1px;
+    background-color: rgba(0,0,0,0);
+    outline: 0;
+    color: #F6EDE9;
+    font-size: 18px;
+    
+  }
+  &__input::placeholder {
+    margin-bottom: 10px;
+    color: #F6EDE9;
+    font-size: 18px;
+
+  }
+
+  &__submit {
+    border: none;
+    font-size: 20px;
+    color: #533738;
+    background-color:#CC8B86;
+    width: 310px;
+    padding: 25px 65px 25px 65px;
+    margin-top: 20px;
+  }
+  &__map-wrapper {
+    margin-left: auto;
+  }
+
+}
+
+footer {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding:  30px 0px 30px 0px;
+}
+
+.footer__telephone
+{
+  margin-right: 40px;
+  text-decoration: none;
+  color:#533738;
+  font-size: 18px;
+}
+
+.footer__address
+{
+  margin-right: auto;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.footer__company
+{
+  font-size: 18px;
+}
